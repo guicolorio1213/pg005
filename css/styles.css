@@ -1,0 +1,64 @@
+:root {
+    --primary: #2563eb;
+    --dark: #1e293b;
+    --light: #f8fafc;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light);
+    margin: 0;
+    padding: 20px;
+    color: var(--dark);
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.student-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+    border-top: 5px solid var(--primary);
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+}
+
+.student-card h3 {
+    margin: 10px 0;
+    color: var(--dark);
+}
+
+.btn-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-link:hover {
+    background-color: #1d4ed8;
+}
